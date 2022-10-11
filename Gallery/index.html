@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- nature -->
+    <section class="section nature">
+      <img
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        title="nature-1"
+        class="img"
+        data-id="1"
+        alt="nature-1"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        title="nature-2"
+        class="img"
+        data-id="2"
+        alt="nature-2"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1495562569060-2eec283d3391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        title="nature-3"
+        class="img"
+        data-id="3"
+        alt="nature-3"
+      />
+    </section>
+    <!-- city -->
+    <section class="section city">
+      <img
+        src="https://images.unsplash.com/photo-1612445076771-7ab7c46780a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        title="city-1"
+        data-id="1"
+        class="img"
+        alt="city-1"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1579616075377-696d66a6e373?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        title="city-2"
+        data-id="2"
+        class="img"
+        alt="city-2"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=683&q=80"
+        title="city-3"
+        data-id="3"
+        class="img"
+        alt="city-3"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1471306224500-6d0d218be372?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        title="city-4"
+        data-id="4"
+        class="img"
+        alt="city-4"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1625472603517-1b0dc72846ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        title="city-5"
+        data-id="5"
+        class="img"
+        alt="city-5"
+      />
+    </section>
+
+    <!-- modal -->
+    <div class="modal">
+      <button class="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-content">
+        <!-- prev next buttons -->
+        <button class="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <!-- content -->
+        <img
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80"
+          class="main-img"
+          alt=""
+        />
+        <h3 class="image-name">image name</h3>
+        <div class="modal-images">
+          <!-- <img
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80"
+            title="city-1"
+            id="1"
+            class="modal-img"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1575036578784-094bf35ecff9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            title="city-2"
+            id="2"
+            class="modal-img selected"
+            alt=""
+          /> -->
+        </div>
+      </div>
+    </div>
+    <script src="app-class.js"></script>
+  </body>
+</html>
