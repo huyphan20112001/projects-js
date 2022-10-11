@@ -55,7 +55,6 @@ const app = {
   render: function () {
     const html = this.people.map((person) => {
       const iconActive = document.querySelector(".icon.active");
-      console.log(iconActive.classList.contains("active"));
       if (this.randomIndex === person.id) {
         return `
       
@@ -112,7 +111,29 @@ const app = {
     icons.forEach((icon) => {
       icon.onclick = function () {
         const iconActive = document.querySelector(".icon.active");
-        console.log(icon.dataset.label);
+        const userTitle = document.querySelector(".user-title");
+
+        const label = icon.dataset.label;
+        userTitle.innerText = `My ${label} is`;
+        _this.people.forEach((person) => {
+          if (_this.randomIndex === person.id) {
+            const userValue = document.querySelector(".user-value");
+            console.log(label);
+            if (label === "name") {
+              userValue.innerText = person.name;
+            } else if (label === "email") {
+              userValue.innerText = person.email;
+            } else if (label === "age") {
+              userValue.innerText = person.age;
+            } else if (label === "street") {
+              userValue.innerText = person.address;
+            } else if (label === "phone") {
+              userValue.innerText = person.phone;
+            } else if (label === "password") {
+              userValue.innerText = person.password;
+            }
+          }
+        });
         iconActive.classList.remove("active");
         icon.classList.add("active");
       };
