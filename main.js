@@ -12,7 +12,7 @@ const app = {
     {
       id: 2,
       name: "Counter First",
-      img: "./images/counterFirst.png",
+      img: "./images/CounterFirst.png",
       page: "./CounterFirst/index.html",
     },
     {
