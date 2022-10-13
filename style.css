@@ -59,7 +59,7 @@ img {
 }
 
 .list-projects {
-  width: 90vw;
+  width: 65vw;
   max-width: var(--max-width);
   margin: 0px auto 2rem;
   display: grid;
