@@ -117,6 +117,54 @@ const app = {
       img: "./images/Slider.png",
       page: "./Slider/index.html",
     },
+    {
+      id: 20,
+      name: "CountDown",
+      img: "./images/CountDown.png",
+      page: "./Countdown/index.html",
+    },
+    {
+      id: 21,
+      name: "Grocery",
+      img: "./images/Grocery.png",
+      page: "./Grocery/index.html",
+    },
+    {
+      id: 22,
+      name: "SliderFirst",
+      img: "./images/SliderFirst.png",
+      page: "./SliderFirst/index.html",
+    },
+    {
+      id: 23,
+      name: "Cocktails",
+      img: "./images/Cocktails.png",
+      page: "./Cocktails/index.html",
+    },
+    {
+      id: 24,
+      name: "Wiki",
+      img: "./images/Wiki.png",
+      page: "./Wiki/index.html",
+    },
+    {
+      id: 25,
+      name: "RandomPerson",
+      img: "./images/RandomPerson.png",
+      page: "./RandomPerson/index.html",
+    },
+    {
+      id: 26,
+      name: "Number",
+      img: "./images/Number.png",
+      page: "./Number/index.html",
+    },
+    {
+      id: 27,
+      name: "Stripe",
+      img: "./images/Stripe.png",
+      page: "./Stripe/index.html",
+    },
   ],
   render: function () {
     const html = this.projects.map((project) => {
