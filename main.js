@@ -165,6 +165,12 @@ const app = {
       img: "./images/Stripe.png",
       page: "./Stripe/index.html",
     },
+    {
+      id: 28,
+      name: "Pagination",
+      img: "./images/Pagination.png",
+      page: "./Pagination/index.html",
+    },
   ],
   render: function () {
     const html = this.projects.map((project) => {
