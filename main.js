@@ -171,6 +171,12 @@ const app = {
       img: "./images/Pagination.png",
       page: "./Pagination/index.html",
     },
+    {
+      id: 29,
+      name: "Store",
+      img: "./images/Store.png",
+      page: "./Store/index.html",
+    },
   ],
   render: function () {
     const html = this.projects.map((project) => {
