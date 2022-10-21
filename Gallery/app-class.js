@@ -6,6 +6,8 @@ const modalList = document.querySelector(".modal-images");
 
 const sectionCity = document.querySelector(".section.city");
 const sectionNature = document.querySelector(".section.nature");
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
 
 const app = {
   handleEvents: function () {
@@ -37,8 +39,45 @@ const app = {
           });
           const modalImgs = document.querySelectorAll(".modal-img");
 
+          nextBtn.onclick = (e) => {
+            const modalImgSelected = document.querySelector(
+              ".modal-img.selected"
+            );
+            let currentIndex = modalImgSelected.dataset.id;
+            currentIndex++;
+            if (currentIndex > modalImgs.length) {
+              currentIndex = 1;
+            }
+            console.log(currentIndex);
+            modalImgs.forEach((item) => {
+              if (currentIndex == item.dataset.id) {
+                modalImgSelected.classList.remove("selected");
+                item.classList.add("selected");
+                mainImg.src = item.src;
+              }
+            });
+          };
+          prevBtn.onclick = (e) => {
+            const modalImgSelected = document.querySelector(
+              ".modal-img.selected"
+            );
+            let currentIndex = modalImgSelected.dataset.id;
+            currentIndex--;
+            if (currentIndex < 1) {
+              currentIndex = modalImgs.length;
+            }
+            console.log(currentIndex);
+            modalImgs.forEach((item) => {
+              if (currentIndex == item.dataset.id) {
+                modalImgSelected.classList.remove("selected");
+                item.classList.add("selected");
+                mainImg.src = item.src;
+              }
+            });
+          };
           modalImgs.forEach((modalImg, index) => {
             modalImg.onclick = function (e) {
+              console.log("currentIndex: ", currentIndex);
               console.log(modalImgs[index].dataset.id);
               console.log(e.target.dataset.id);
               const modalImgSelected = document.querySelector(
